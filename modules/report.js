@@ -110,7 +110,7 @@ function validateReport(report) {
 
     /*=============REACTION====================*/
 
-    reactionType: Joi.string().required(),
+    reactionType: Joi.array().required(),
     reactionInfo: Joi.string(),
 
     /*=============DATE/time====================*/

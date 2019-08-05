@@ -4,6 +4,8 @@ const _ = require("lodash");
 const router = express.Router();
 const { Report, validate } = require("../modules/report");
 
+router.use(cors());
+
 router.get("/", async (req, res) => {
   let reports = await Report.find();
   res.send(reports);
