@@ -1,10 +1,10 @@
 const express = require("express");
 const _ = require("lodash");
-const cors = require("cors");
+// const cors = require("cors");
 const router = express.Router();
 const { Report, validate } = require("../modules/report");
 
-router.use(cors());
+// router.use(cors());
 
 router.get("/", async (req, res) => {
   let reports = await Report.find();
