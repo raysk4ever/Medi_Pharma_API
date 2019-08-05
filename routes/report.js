@@ -1,6 +1,6 @@
 const express = require("express");
 const _ = require("lodash");
-
+const cors = require("cors");
 const router = express.Router();
 const { Report, validate } = require("../modules/report");
 
